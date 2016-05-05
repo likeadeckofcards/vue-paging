@@ -39,7 +39,6 @@
 
         computed: {
             length: function() {
-                console.log(this.items.length % this.count)
                 return Math.ceil(this.items.length / this.count);
             },
 
