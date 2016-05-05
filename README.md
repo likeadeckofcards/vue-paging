@@ -7,7 +7,7 @@ This component is written to be compiled with Vueify.
 ## Usage
 In the component calling this component add the following HTML to where you want to have the page numbers to display.
 ```
-<paging :items="items" :count="30" type="type"></paging>
+<paging :items="items" :count.sync="30" type="type"></paging>
 ```
 items is an array of items
 count is the number of items per page
@@ -20,7 +20,7 @@ offset: 0
 ```
 Then add this to your events section:
 ```
-'page-exp': function(page) {
+'page-type': function(page) {
    this.activePage = page;
    this.offset = page * count;
 }
