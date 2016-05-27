@@ -22,7 +22,7 @@ Then add this to your events section:
 ```
 'page-type': function(page) {
    this.activePage = page;
-   this.offset = page * count;
+   this.offset = page * this.count;
 }
 ```
 
